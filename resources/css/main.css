@@ -1,23 +1,53 @@
 body, html{
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 nav{
   width: 100%;
 }
 nav a{
   font-weight: lighter;
-  color: #F5F5DC;
+  color: #FFFAFA;
 }
-.navbar{height: 60px}
-.navbar img{width: 300px;height: auto;
+.navbar{height: px; transition: 1s;}
+.navbar img{width: 70px;height: auto; padding-top: 20px; transition: 1s;
 }
-.navi{display: flex; letter-spacing: 2px;}
+.navi{display: flex; letter-spacing: 2px; padding-top: 20px; align-items: center; transition: 1s;}
+.navi a{
+  display: inline-block;
+  position: relative;
+}
+.navi a:hover{
+  color: #FFFAFA;
+}
+.navi a:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+.navi a:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
 .landing{
-  color: #F5F5DC;
+  color: #FFFAFA;
   height: 100vh;
-  background: url('../../resources/images/img1.jpg') no-repeat center center fixed;
+  background: url('../../resources/images/comp.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -39,58 +69,68 @@ nav a{
   height: 100%;
 }
 #main h1{
+  text-transform: ;
+  letter-spacing: 3px;
   padding-top: 20px;
-  text-align: center;
+  text-align: left;
   text-shadow: 2px -1px 13px rgba(149, 150, 115, 1);
-  font-size: 4em;
-  font-weight: bolder;
+  font-size: 6em;
+  font-family: 'Raleway';
+  font-weight: lighter;
 }
-#main h4{
-  font-size: 2em;
+.line span{
+
+}
+#inside h4{
+  font-family: 'Raleway';
+  letter-spacing: px;
+  font-size: 2.5em;
   padding-top: 30px;
   padding-bottom: 30px;
-  text-align: center;
-}
-#main i{
-  padding-top: 150px;
+  text-align: left;
+  font-weight: lighter;
 }
 #inside{
+  max-width: 70em;
   height: 100%;
 }
-.arrow{
-  position: relative;
-  bottom: -2rem;
-  left: 50%;
-  margin-left:-20px;
-  width: 40px;
-  height: 40px;
+.skillsect{
+  background: url('../../resources/images/skills.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-.arrow a{
-  color: #F5F5DC;
+.skills{max-width: 70em; margin: 0 auto; height: px; color: #FFFAFA;}
+.skills h2{padding-top: 20px; padding-bottom: 20px; font-size: 2em; font-family: }
+.skills p{ padding-top: 10px; padding-bottom: 10px; font size: 1.5em;}
+.project{
+  max-width: 70em;
+  margin: 0 auto;
 }
-.bounce {
-  animation: bounce 2s infinite;
-}
+.project1{padding-top: 20px; padding-bottom: 20px;}
+.projecthead h1{font-size: 3.5em; padding-bottom: 20px; padding-top: 20px; color: #d2143a;}
+.projecthead h2{font-size: 2em; font-family: 'Raleway'; font-weight: ; letter-spacing: 2px; color: #707070;}
+.projecthead {padding-top: 40px; padding-bottom: 40px;}
+#imgcont{display: flex; justify-content: center; align-items: center;}
+#sitedesc h2{font-size: 2em; letter-spacing: 2px; padding-bottom: 15px;}
+#sitedesc h4{font-size: 1.5em; letter-spacing: 1px; padding-bottom: 15px;}
+#sitedesc p{text-align: justify; text-justify: inter-word;}
+.project1 img{width: 400px; height: auto; align-items: center; padding-bottom: 40px;}
+.project2 img{width: 400px; height: auto;}
+.project2{padding-top: 40px; padding-bottom: 40px;}
+#imgdm{padding-bottom: 30px; display: flex; justify-content: center; align-items: center;}
+#tech h2{font-weight: bold; letter-spacing: 2px; color: #BEBEBE;}
 .open{
   padding-top: 100px;
 }
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
-@font-face {
-    font-family: 'Rounded-Elegance';
-    src:url('Rounded-Elegance.ttf.woff') format('woff'),
-        url('Rounded-Elegance.ttf.svg#Rounded-Elegance') format('svg'),
-        url('Rounded-Elegance.ttf.eot'),
-        url('Rounded-Elegance.ttf.eot?#iefix') format('embedded-opentype');
-    font-weight: normal;
-    font-style: normal;
-}
+.getintouch{background: url('../../resources/images/getin.jpg'); padding-top: 50px; padding-bottom: 50px;}
+.getintouch h1{text-transform: uppercase; color: #d2143a; padding: 25px 0px 25px 0px;}
+.getintouch p{padding-top: 25px; padding-bottom: 25px; color: #707070;}
+.getintouch i{color: #A9A9A9;}
+.getintouch button{margin: 25px 0px 25px 0px; background: transparent; padding: 5px 45px 5px 45px;}
+.social{height: 400px; width: 100%; background: linear-gradient(to top right, #000000 0%, #303030 100%); color: #f0ffff;}
+.social i{padding-left: 15px; padding-right: 15px;}
+.social p{padding-left: 15px;}
+#soc{height: 100%; width: auto;}
+.social p{padding-top: 25px; padding-bottom: 25px; color: #707070;}
