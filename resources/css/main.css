@@ -184,6 +184,7 @@ background-size: cover; padding-top: 50px; padding-bottom: 50px;}
   #tech h2{font-size: 2.5em;}
   #expertise h2{font-size: 1.6em;}
   #expertise h4{font-size: 1.1em;}
+  .aboutme{margin-left: 15px;}
   .aboutme h2{font-size: 2.5em;}
   #part1, #part2, #part3, #part4{font-size: 1em; padding-right: 15px;}
   .getintouch h1{font-size: 2em;}
@@ -197,7 +198,7 @@ background-size: cover; padding-top: 50px; padding-bottom: 50px;}
    .navi{font-size: 0.9em;}
    #inside h1{font-size: 2.5em;}
    #inside h4{font-size: 1.3em;}
-   .projecthead{padding-left: 20px;}
+   .projecthead{padding-left: 15px;}
    .projecthead h1{font-size: 2em;}
    .projecthead h2{font-size: 1.2em;}
    #sitedesc h2{font-size: 1.4em;}
@@ -207,7 +208,7 @@ background-size: cover; padding-top: 50px; padding-bottom: 50px;}
    #expertise h2{font-size: 1.3em;}
    #expertise h4{font-size: 0.9em;}
    .aboutme h2{font-size: 2em;}
-   .aboutme img{margin-left: 15px;}
+   .aboutme{margin-left: 15px;}
    #part1, #part2, #part3, #part4{font-size: 0.8em; padding-right: 15px;}
    .getintouch h1{font-size: 2em;}
    .getintouch p{font-size: 1em;}
@@ -218,6 +219,8 @@ background-size: cover; padding-top: 50px; padding-bottom: 50px;}
 
 }
 @media (max-width: 420px) {
+  .projecthead {padding-right: 15px;}
+  .projecthead h1{font-size: 1.7em;}
   .navi{font-size: 0.6em;}
   .aboutme{margin-left: 15px;}
 }
